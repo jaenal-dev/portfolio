@@ -11,14 +11,14 @@ import {
 	nodejs,
 	mongodb,
 	git,
-	carrent,
-	jobit,
 	tripguide,
 	mysql,
 	laravel,
 	bootstrap,
 	php,
-	gmn,
+	cig,
+	gmnhome,
+	sppd,
 } from '../assets';
 
 export const navLinks = [
@@ -50,7 +50,7 @@ const services = [
 		icon: backend,
 	},
 	{
-		title: 'Content Creator',
+		title: 'Full Stack Developer',
 		icon: creator,
 	},
 ];
@@ -109,8 +109,8 @@ const technologies = [
 const experiences = [
 	{
 		title: 'Freelance Web Developer',
-		company_name: 'PT. Garda Mitra Nasional',
-		icon: gmn,
+		company_name: 'Creative Innovation Glory',
+		icon: cig,
 		iconBg: '#383E56',
 		date: 'January 2022 - March 2022',
 		points: [
@@ -120,45 +120,6 @@ const experiences = [
 			'Participating in code reviews and providing constructive feedback to other developers.',
 		],
 	},
-	// {
-	// 	title: 'React Native Developer',
-	// 	company_name: 'Tesla',
-	// 	icon: tesla,
-	// 	iconBg: '#E6DEDD',
-	// 	date: 'Jan 2021 - Feb 2022',
-	// 	points: [
-	// 		'Developing and maintaining web applications using React.js and other related technologies.',
-	// 		'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-	// 		'Implementing responsive design and ensuring cross-browser compatibility.',
-	// 		'Participating in code reviews and providing constructive feedback to other developers.',
-	// 	],
-	// },
-	// {
-	// 	title: 'Web Developer',
-	// 	company_name: 'Shopify',
-	// 	icon: shopify,
-	// 	iconBg: '#383E56',
-	// 	date: 'Jan 2022 - Jan 2023',
-	// 	points: [
-	// 		'Developing and maintaining web applications using React.js and other related technologies.',
-	// 		'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-	// 		'Implementing responsive design and ensuring cross-browser compatibility.',
-	// 		'Participating in code reviews and providing constructive feedback to other developers.',
-	// 	],
-	// },
-	// {
-	// 	title: 'Full stack Developer',
-	// 	company_name: 'Meta',
-	// 	icon: meta,
-	// 	iconBg: '#E6DEDD',
-	// 	date: 'Jan 2023 - Present',
-	// 	points: [
-	// 		'Developing and maintaining web applications using React.js and other related technologies.',
-	// 		'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-	// 		'Implementing responsive design and ensuring cross-browser compatibility.',
-	// 		'Participating in code reviews and providing constructive feedback to other developers.',
-	// 	],
-	// },
 ];
 
 const testimonials = [
@@ -190,63 +151,67 @@ const testimonials = [
 
 const projects = [
 	{
-		name: 'Car Rent',
+		name: 'Garda Mitra Nasional',
 		description:
-			'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+			'Web-based platform that allows users to view company profiles, look for jobs and contacts to ask admins. and there is an admin dashboard, namely there are modules for managing employees, uploading salary data, creating content and managing service complaint inboxes.',
 		tags: [
 			{
-				name: 'react',
+				name: 'laravel',
 				color: 'blue-text-gradient',
+			},
+			{
+				name: 'mysql',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'bootstrap',
+				color: 'pink-text-gradient',
+			},
+		],
+		image: gmnhome,
+		source_code_link: 'http://gmn-511.com/',
+	},
+	{
+		name: 'Official Travel',
+		description:
+			'web application for a government agency, namely an official travel order, there are modules for managing employee data, making assignment letters, official memos, reports.',
+		tags: [
+			{
+				name: 'laravel',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'breeze',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'mysql',
+				color: 'pink-text-gradient',
+			},
+		],
+		image: sppd,
+		source_code_link: 'https://github.com/jaenal-dev/app_sppd.git',
+	},
+	{
+		name: 'E-Commerce',
+		description:
+			'E-commerce web application that uses several reactjs, expressjs, nodejs and mongodb frameworks as the database of the application and besides that I use the react-paypal library as a payment handle.',
+		tags: [
+			{
+				name: 'reactjs',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'expressjs',
+				color: 'green-text-gradient',
 			},
 			{
 				name: 'mongodb',
-				color: 'green-text-gradient',
-			},
-			{
-				name: 'tailwind',
 				color: 'pink-text-gradient',
 			},
-		],
-		image: carrent,
-		source_code_link: 'https://github.com/',
-	},
-	{
-		name: 'Job IT',
-		description:
-			'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
-		tags: [
 			{
-				name: 'react',
-				color: 'blue-text-gradient',
-			},
-			{
-				name: 'restapi',
+				name: 'nodejs',
 				color: 'green-text-gradient',
-			},
-			{
-				name: 'scss',
-				color: 'pink-text-gradient',
-			},
-		],
-		image: jobit,
-		source_code_link: 'https://github.com/',
-	},
-	{
-		name: 'Trip Guide',
-		description:
-			'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
-		tags: [
-			{
-				name: 'nextjs',
-				color: 'blue-text-gradient',
-			},
-			{
-				name: 'supabase',
-				color: 'green-text-gradient',
-			},
-			{
-				name: 'css',
-				color: 'pink-text-gradient',
 			},
 		],
 		image: tripguide,

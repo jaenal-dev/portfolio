@@ -30,7 +30,10 @@ import mysql from './tech/mysql.png';
 // import starbucks from './company/starbucks.png';
 // import tesla from './company/tesla.png';
 import gmn from './company/gmn.png';
+import cig from './company/cig.png';
 
+import sppd from './sppd.png';
+import gmnhome from './gmnhome.png';
 import carrent from './carrent.png';
 import jobit from './jobit.png';
 import tripguide from './tripguide.png';
@@ -65,4 +68,7 @@ export {
 	php,
 	mysql,
 	gmn,
+	cig,
+	gmnhome,
+	sppd,
 };
