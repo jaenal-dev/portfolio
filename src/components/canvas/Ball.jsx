@@ -18,7 +18,7 @@ const Ball = (props) => {
 			<ambientLight intensity={0.25} />
 			<directionalLight position={[0, 0, 0.05]} />
 			<mesh castShadow receiveShadow scale={2.75}>
-				<icosahedronGeometry attach='geometry' args={[1, 1]} />
+				<icosahedronGeometry args={[1, 1]} />
 				<meshStandardMaterial
 					attach='material'
 					color='#fff8eb'
@@ -41,12 +41,19 @@ const Ball = (props) => {
 const BallCanvas = ({ icon }) => {
 	return (
 		<Canvas
-			frameLoop='demand'
+			frameloop='always'
 			dpr={[1, 2]}
 			gl={{ preserveDrawingBuffer: true }}
 		>
 			<Suspense fallback={<CanvasLoader />}>
 				<OrbitControls enableZoom={false} />
+				<OrbitControls
+					enableZoom={false}
+					minPolarAngle={Math.PI / 4}
+					maxPolarAngle={Math.PI / 1.35}
+					minAzimuthAngle={-Math.PI / 4}
+					maxAzimuthAngle={Math.PI / 4}
+				/>
 				<Ball imgUrl={icon} />
 			</Suspense>
 
